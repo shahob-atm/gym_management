@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/auth/super_admin")
 @RequiredArgsConstructor
 public class SuperAdminController {
-    final SuperAdminService superAdminService;
+    private final SuperAdminService superAdminService;
 
     @PutMapping
     @PreAuthorize("hasRole('ROLE_SUPER_ADMIN')")
