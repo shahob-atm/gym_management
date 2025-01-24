@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.UUID;
 
 public interface UserRateRepo extends JpaRepository<UserRate, UUID> {
+    List<UserRate> findAllByUserId(UUID userId);
+
     @Query(value = "select u.id as userId, ur.id as rateId ,u.full_name,u.username,ur.start_time, ur.end_time, ur.day,ur.name\n" +
             "from gym g\n" +
             "          join gym_users gu on g.id = gu.gym_id\n" +
