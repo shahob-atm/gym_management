@@ -56,7 +56,7 @@ public class GymBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "Gym_Soft_bot";
+        return "";
     }
 
     @Override
