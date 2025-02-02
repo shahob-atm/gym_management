@@ -11,7 +11,6 @@ import com.example.gym_management.repository.GymRepo;
 import com.example.gym_management.repository.RateRepo;
 import com.example.gym_management.repository.UserRateRepo;
 import com.example.gym_management.repository.UserRepo;
-import com.example.gym_management.service.admin.AdminService;
 import com.example.gym_management.wrapper.GymReportResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -42,7 +41,6 @@ public class GymBot extends TelegramLongPollingBot {
     private final AuthenticationManager authenticationManager;
     private final UserRepo userRepo;
     private final UserRateRepo userRateRepo;
-    private final AdminService adminService;
     private final GymRepo gymRepo;
     private final RateRepo rateRepo;
     private final Map<Long, String> userStates = new HashMap<>();
