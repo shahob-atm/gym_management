@@ -43,7 +43,7 @@ This is a Gym Management System developed using Java and Spring Boot. The system
 
 ## Usage
 - Access the application at `http://localhost:8080`
-- Register and log in as a user or admin
+- Register and login in as a user or admin
 - Manage members, subscriptions, and schedules via the dashboard
 
 ## Contributing
