@@ -34,6 +34,12 @@ public class MyCommandLineRunner implements CommandLineRunner {
                     .password(passwordEncoder.encode("123")).isEnabled(true)
                     .roles(adminRoles).build();
             userRepo.save(user);
+
+            User adminUser = User.builder().username("admin").fullName("admin")
+                    .password(passwordEncoder.encode("123")).isEnabled(true)
+                    .roles(adminRoles).build();
+
+            userRepo.save(adminUser);
         }
     }
 }
