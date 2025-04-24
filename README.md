@@ -14,7 +14,7 @@ This is a Gym Management System developed using Java and Spring Boot. The system
 - Maven
 - PostgresSQL (or another relational database)
 - Hibernate (JPA)
-- Thymeleaf (or React/Angular for frontend if applicable)
+- React/Angular for frontend
 
 ## Installation
 ### Prerequisites
